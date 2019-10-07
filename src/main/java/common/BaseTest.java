@@ -114,13 +114,16 @@ public class BaseTest extends BaseLibrary {
             Configuration.browser=WebDriverRunner.INTERNET_EXPLORER;
         }else if (browserName.equalsIgnoreCase("chrome")){
 
-            if (properties.getProperty("remote").equalsIgnoreCase("false")){
-                driverPath("chrome");
-                System.setProperty("webdriver.chrome.driver", driverPath);
-            }else{
-                Configuration.remote = properties.getProperty("gridUrl");//"http://100.64.15.255:4444/wd/hub";
+//            if (properties.getProperty("remote").equalsIgnoreCase("false")){
+//                driverPath("chrome");
+//                System.setProperty("webdriver.chrome.driver", driverPath);
+//            }else{
+//                Configuration.remote = properties.getProperty("gridUrl");//"http://100.64.15.255:4444/wd/hub";
+//
+//            }
 
-            }
+            driverPath("chrome");
+                System.setProperty("webdriver.chrome.driver", driverPath);
 
             Configuration.browser = (System.getProperty("browser") == null) ? "chrome" : System.getProperty("browser");
         }
@@ -129,7 +132,6 @@ public class BaseTest extends BaseLibrary {
 
 
         Configuration.driverManagerEnabled = false;
-//        Configuration.remote = System.getProperty("hub");
         Configuration.reportsFolder = "test-result/reports";
         Configuration.screenshots = Configuration.remote == null;
         Configuration.savePageSource = false;
