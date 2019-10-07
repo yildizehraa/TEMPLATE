@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f539e17d-6e4f-4734-a9c5-cb59643da0d1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/StringGenerator/GroovyScriptProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/StringGenerator/GroovyScriptProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,15 +15,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="Expedia.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/Expedia_Login/Expedia.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="MayaNextAutomation.iml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MayaNextAutomation.iml">
+      <file leaf-file-name="testng.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-963" />
+            <state relative-caret-position="238">
+              <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -55,6 +62,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
         <option value="$PROJECT_DIR$/src/main/java/common/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/StringGenerator/GroovyScriptProcess.java" />
+        <option value="$PROJECT_DIR$/testng.xml" />
       </list>
     </option>
   </component>
@@ -223,12 +231,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Expedia_TS0001_CreateAccount - 2019.10.07 at 15h 43m 15s.xml">
-      <configuration name="Expedia.TS0001_CreateAccount" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Expedia_TS0001_CreateAccount - 2019.10.07 at 16h 20m 56s.xml">
-      <configuration name="Expedia.TS0001_CreateAccount" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="Expedia_TS0001_CreateAccount - 2019.10.07 at 16h 22m 58s.xml">
       <configuration name="Expedia.TS0001_CreateAccount" configurationId="TestNG" />
     </history-entry>
@@ -253,6 +255,12 @@
     <history-entry file="Expedia_TS0001_CreateAccount - 2019.10.07 at 17h 21m 20s.xml">
       <configuration name="Expedia.TS0001_CreateAccount" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="Expedia_TS0001_CreateAccount - 2019.10.07 at 17h 25m 58s.xml">
+      <configuration name="Expedia.TS0001_CreateAccount" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Expedia_TS0001_CreateAccount - 2019.10.07 at 17h 26m 47s.xml">
+      <configuration name="Expedia.TS0001_CreateAccount" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -266,12 +274,12 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5382908" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36514983" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22228146" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22228146" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -344,13 +352,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testng_2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3264">
@@ -399,13 +400,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/Expedia_Login/Expedia.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1122">
@@ -445,11 +439,29 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MayaNextAutomation.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-963" />
+        <state relative-caret-position="221">
+          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DenemeSon.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/Expedia_Login/Expedia.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
       </provider>
     </entry>
   </component>

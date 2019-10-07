@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Deneme" parallel="classes" verbose="1">
+
+    <parameter name="testEnabled" value="true"/>
+
+
+    <test name="Fiber">
+        <classes>
+            <!--<class name="tests.TOPTAN.Toptan"/>-->
+        </classes>
+    </test>
+
+</suite>
