@@ -23,7 +23,7 @@ public class Expedia extends BaseTest {
     public void TS0001_CreateAccount(){
 
         mainPage.open();
-
+takeScreenshot();
 
     }
 
