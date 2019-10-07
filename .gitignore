@@ -1,0 +1,61 @@
+﻿# Eclipse
+.classpath
+.project
+.settings/
+
+
+# Intellij
+.idea/
+*.iml
+*.iws
+.idea/**/gradle.xml
+.idea/**/libraries
+.idea/*
+/out/
+.idea/replstate.xml
+
+# MayaNextAutomationNew
+#MayaNextAutomationNew.iml
+
+
+
+# Allure Report
+allure-results/*
+allure-results/
+allure-report/
+
+# Mac
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+test-output
+/bin/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+/galenReports/
+/galenDumps/
+
+#Dökümanlar
+documents/*
+/src/test/resources/galen/*/dump/
+
+/test-result/*
+
+
+debug.log
+
+
