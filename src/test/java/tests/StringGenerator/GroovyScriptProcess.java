@@ -1,20 +1,12 @@
 package tests.StringGenerator;
 
 import common.BaseLibrary;
-
 import java.io.File;
 import java.io.FileFilter;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 
-
-/****************************************************
- * Tarih: 2019-02-12
- * Proje: SolCRM Functional Test Automation
- * Class: 
- * Yazan: Zehra Yıldız
- ****************************************************/
 
 public class GroovyScriptProcess extends BaseLibrary {
 
