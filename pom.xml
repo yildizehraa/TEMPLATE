@@ -156,36 +156,36 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>
-                    org.apache.maven.plugins
-                </groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.20</version>
+            <!--<plugin>-->
+                <!--<groupId>-->
+                    <!--org.apache.maven.plugins-->
+                <!--</groupId>-->
+                <!--<artifactId>maven-surefire-plugin</artifactId>-->
+                <!--<version>2.20</version>-->
 
-                <configuration>
+                <!--<configuration>-->
 
-                    <suiteXmlFiles>
-                        <suiteXmlFile>testng_2.xml</suiteXmlFile>
-                    </suiteXmlFiles>
-                    <argLine>
-                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-                    </argLine>
-                </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.aspectj</groupId>
-                        <artifactId>aspectjweaver</artifactId>
-                        <version>${aspectj.version}</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.apache.httpcomponents</groupId>
-                        <artifactId>httpclient</artifactId>
-                        <version>4.5.3</version>
-                    </dependency>
+                    <!--<suiteXmlFiles>-->
+                        <!--<suiteXmlFile>testng_2.xml</suiteXmlFile>-->
+                    <!--</suiteXmlFiles>-->
+                    <!--<argLine>-->
+                        <!-- -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"-->
+                    <!--</argLine>-->
+                <!--</configuration>-->
+                <!--<dependencies>-->
+                    <!--<dependency>-->
+                        <!--<groupId>org.aspectj</groupId>-->
+                        <!--<artifactId>aspectjweaver</artifactId>-->
+                        <!--<version>${aspectj.version}</version>-->
+                    <!--</dependency>-->
+                    <!--<dependency>-->
+                        <!--<groupId>org.apache.httpcomponents</groupId>-->
+                        <!--<artifactId>httpclient</artifactId>-->
+                        <!--<version>4.5.3</version>-->
+                    <!--</dependency>-->
 
-                </dependencies>
-            </plugin>
+                <!--</dependencies>-->
+            <!--</plugin>-->
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
