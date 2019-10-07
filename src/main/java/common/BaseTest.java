@@ -207,7 +207,7 @@ public class BaseTest extends BaseLibrary {
         sysProperties += "\nlocale: " + Locale.getDefault();
         WebDriverRunner.addListener(new DriverEventListener());
 
-       // String driverPath=System.getProperty("user.dir")+"/drivers/";
+//        String driverPath=System.getProperty("user.dir")+"/drivers/";
         String browserName=properties.getProperty("browser");
 
         if (browserName.equalsIgnoreCase("ie")){
