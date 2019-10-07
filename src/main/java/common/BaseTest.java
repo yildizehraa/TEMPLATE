@@ -113,15 +113,6 @@ public class BaseTest extends BaseLibrary {
             System.setProperty("webdriver.ie.driver", driverPath);
             Configuration.browser=WebDriverRunner.INTERNET_EXPLORER;
         }else if (browserName.equalsIgnoreCase("chrome")){
-
-//            if (properties.getProperty("remote").equalsIgnoreCase("false")){
-//                driverPath("chrome");
-//                System.setProperty("webdriver.chrome.driver", driverPath);
-//            }else{
-//                Configuration.remote = properties.getProperty("gridUrl");//"http://100.64.15.255:4444/wd/hub";
-//
-//            }
-
             driverPath("chrome");
                 System.setProperty("webdriver.chrome.driver", driverPath);
 
