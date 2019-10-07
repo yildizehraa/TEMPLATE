@@ -19,7 +19,6 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.*;
 import org.testng.annotations.*;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -31,27 +30,14 @@ import java.util.*;
 
 import static io.qameta.allure.util.ResultsUtils.firstNonEmpty;
 
-//import org.apache.log4j.Logger;
-
-/****************************************************
- * Tarih: 2018-12-05
- * Proje: MayaNext Functional Test Automation
- * Class: 
- * Yazan: Emre Sencan
- ****************************************************/
-
 public class BaseTest extends BaseLibrary {
 
     static final int timeout = 200;
-    static final int loadingTimeout = 200;
-    String explorerPath="";
     public Locale turkishLocal;
     String driverPath="";
     private String parentFeatureId = null;
     public String testNameFromXml;
     protected static Map<String, String> parentFeatureMap = new HashMap();
-//    private static final Logger LOGGER = Logger.getLogger(TestBase.class);
-    protected static boolean ISWEBSERVICE = false;
 
 
     public void driverPath(String browserName){
@@ -101,95 +87,8 @@ public class BaseTest extends BaseLibrary {
         }
     }
 
-    public void useFirefox()
-    {
-        try {
-            FirefoxOptions firefoxOptions = new FirefoxOptions();
-            firefoxOptions.setCapability(CapabilityType.VERSION, Configuration.browserVersion);
-
-            EventFiringWebDriver driver;
-            if (Configuration.remote == null) {
-                WebDriver firefox = new FirefoxDriver();
-                driver = new EventFiringWebDriver(firefox).register(new DriverEventListener());
-            } else {
-                RemoteWebDriver firefox = new RemoteWebDriver(new URL(Configuration.remote), firefoxOptions);
-                firefox.setFileDetector(new LocalFileDetector());
-                driver = new EventFiringWebDriver(firefox).register(new DriverEventListener());
-            }
-
-            if (WebDriverRunner.hasWebDriverStarted())
-                WebDriverRunner.getWebDriver().quit();
-
-            WebDriverRunner.setWebDriver(driver);
-
-        } catch (Exception e) {
-            throw new RuntimeException(String.format("Error new RemoteWebDriver: %s error %s", Configuration.remote, e.getMessage()), e);
-        }
-
-        //System.out.println("Browser: " + getCapabilities().getBrowserName());
-    }
-
-    public void useIE()
-    {
-        try {
-            InternetExplorerOptions internetExplorerOptions = new InternetExplorerOptions();
-            internetExplorerOptions.setCapability(CapabilityType.VERSION, Configuration.browserVersion);
-            driverPath("ie");
-            EventFiringWebDriver driver;
-            if (Configuration.remote == null) {
-                System.setProperty("webdriver.ie.driver", driverPath);
-                WebDriver ie = new InternetExplorerDriver();
-                driver = new EventFiringWebDriver(ie).register(new DriverEventListener());
-            } else {
-                RemoteWebDriver ie = new RemoteWebDriver(new URL(Configuration.remote), internetExplorerOptions);
-                ie.setFileDetector(new LocalFileDetector());
-                driver = new EventFiringWebDriver(ie).register(new DriverEventListener());
-            }
-
-            if (WebDriverRunner.hasWebDriverStarted())
-                WebDriverRunner.getWebDriver().quit();
-
-            WebDriverRunner.setWebDriver(driver);
-
-        } catch (Exception e) {
-            throw new RuntimeException(String.format("Error new RemoteWebDriver: %s error %s", Configuration.remote, e.getMessage()), e);
-        }
-
-        //System.out.println("Browser: " + getCapabilities().getBrowserName());
-    }
-    public void useChrome()
-
-    {
-        try {
-            ChromeOptions chromeOptions = new ChromeOptions();
-            chromeOptions.setCapability(CapabilityType.VERSION, Configuration.browserVersion);
-            driverPath("chrome");
-            EventFiringWebDriver driver;
-            if (Configuration.remote == null) {
-                System.setProperty("webdriver.chrome.driver", driverPath);
-                WebDriver chromeDriver = new ChromeDriver();
-                driver = new EventFiringWebDriver(chromeDriver).register(new DriverEventListener());
-            } else {
-                RemoteWebDriver remoteWebDriver = new RemoteWebDriver(new URL(Configuration.remote), chromeOptions);
-                remoteWebDriver.setFileDetector(new LocalFileDetector());
-                driver = new EventFiringWebDriver(remoteWebDriver).register(new DriverEventListener());
-            }
-
-            if (WebDriverRunner.hasWebDriverStarted())
-                WebDriverRunner.getWebDriver().quit();
-
-            WebDriverRunner.setWebDriver(driver);
-
-        } catch (Exception e) {
-            throw new RuntimeException(String.format("Error new RemoteWebDriver: %s error %s", Configuration.remote, e.getMessage()), e);
-        }
-
-        //System.out.println("Browser: " + getCapabilities().getBrowserName());
-    }
-
 
     @BeforeSuite(alwaysRun = true)
-   // @Parameters({"browserName"})
     public void driverSetUp() throws IOException {
 
         Properties properties=getProperty();
@@ -207,7 +106,6 @@ public class BaseTest extends BaseLibrary {
         sysProperties += "\nlocale: " + Locale.getDefault();
         WebDriverRunner.addListener(new DriverEventListener());
 
-//        String driverPath=System.getProperty("user.dir")+"/drivers/";
         String browserName=properties.getProperty("browser");
 
         if (browserName.equalsIgnoreCase("ie")){
@@ -257,30 +155,12 @@ public class BaseTest extends BaseLibrary {
     @BeforeSuite(enabled = true)
     public void beforeSuite(ITestContext context) throws IOException {
 
-//        TestBase testBase= new TestBase();
-        Properties properties=getProperty();
-
-//        testBase.beforeSuite(context,properties.getProperty("TestBase.ENV"),
-//                properties.getProperty("moduleId"),
-//                properties.getProperty("serviceId"),
-//                properties.getProperty("gridUrl"),
-//                properties.getProperty("testEnabled"),
-//                "");
-
         if (System.getProperty("buildName") != null && !System.getProperty("buildName").isEmpty())
             context.getSuite().getXmlSuite().setName(System.getProperty("buildName"));
         else
             context.getSuite().getXmlSuite().setName("Suite");
 
         ((TestRunner) context).getTest().setName("Tests");
-
-
-        Iterator var8 = context.getSuite().getAllMethods().iterator();
-
-//        while(var8.hasNext()) {
-//            ITestNGMethod method = (ITestNGMethod)var8.next();
-//            method.setRetryAnalyzer(new ReTryTestCase());
-//        }
 
         if (System.getProperty("buildName") != null && !System.getProperty("buildName").isEmpty())
             context.getSuite().getXmlSuite().setName(System.getProperty("buildName"));
@@ -293,8 +173,6 @@ public class BaseTest extends BaseLibrary {
 
     @BeforeMethod(alwaysRun = true, enabled = true)
     public void beforeMethod(ITestContext context, Method test) throws UnsupportedEncodingException {
-
-
 
             String testResults = "";
             String testName = firstNonEmpty(
@@ -334,11 +212,6 @@ public class BaseTest extends BaseLibrary {
         }
 
         String testResults = "";
-        int SUCCESS = 1;
-        int FAILURE = 2;
-        int SKIP = 3;
-        int SUCCESS_PERCENTAGE_FAILURE = 4;
-        int STARTED = 16;
         String result = "unknown";
         switch (testResult.getStatus()) {
             case 1:
@@ -368,20 +241,12 @@ public class BaseTest extends BaseLibrary {
         if (testResult.getThrowable() != null) {
             testResults += "\nERROR: " + testResult.getThrowable().getMessage() + "\n";
         }
-        //        System.out.println("Test Annotations: " + testResult.getMethod().getMethod().getDeclaredAnnotation(org.testng.annotations.Test.class).toString());
         testResults += "///////////////////////////////////////////////////////";
         testResults += "///////////////////////////////////////////////////////";
-
-        //Parallelde hatası vermemesi WebDriverRunner.closeWebDriver() eklendi.
-        //login da WebDriverRunner.clearBrowserCache(); eklendi
-        //Selenide.close();
-        //WebDriverRunner.getAndCheckWebDriver().quit();
         log.info(testResults);
 
         try {
             Selenide.close();
-            //WebDriverRunner.getWebDriver().quit();
-            //WebDriverRunner.closeWebDriver();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -395,11 +260,10 @@ public class BaseTest extends BaseLibrary {
 
 
     @BeforeClass(alwaysRun = true)
-    public void beforeClass() throws  UnsupportedEncodingException {
+    public void beforeClass()  {
 
         Annotation[] annotations = this.getClass().getAnnotations();
         if (annotations.length > 0) {
-            //this.testNameFromXml = ((Name)annotations[0]).testName();
             this.testNameFromXml = this.getClass().getName();
         } else {
             this.testNameFromXml = this.getClass().getName();
@@ -408,15 +272,8 @@ public class BaseTest extends BaseLibrary {
         parentFeatureMap.put(this.testNameFromXml, this.parentFeatureId);
     }
 
-    @Step("Test Numarası : {testid} {status} ")
-    public void testStatus(String testid, String status) {
-    }
 
-    @Step("{name} : {description}")
-    public void step(String name, String description) {
-    }
-
-    public Properties getProperty() throws IOException {
+    public Properties getProperty() {
 
         Properties properties= new Properties();
 
@@ -425,7 +282,6 @@ public class BaseTest extends BaseLibrary {
             properties.load(new FileInputStream("src/main/resources/config.properties"));
 
         } catch (Exception e) {
-            // TODO: handle exception
             System.out.println(e.getMessage());
         }
 

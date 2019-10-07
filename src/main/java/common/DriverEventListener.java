@@ -4,16 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.WebDriverEventListener;
-
 import java.sql.Timestamp;
 import java.util.Arrays;
 
-/****************************************************
- * Tarih: 2018-12-05
- * Proje: MayaNext Functional Test Automation
- * Class: 
- * Yazan: Emre Sencan
- ****************************************************/
 public class DriverEventListener extends BaseLibrary implements WebDriverEventListener {
 
     private static boolean log = false;
@@ -68,13 +61,10 @@ public class DriverEventListener extends BaseLibrary implements WebDriverEventLi
 
     public void beforeFindBy(By by, WebElement element, WebDriver driver) {
         waitForLoadingJS(driver);
-//        if (!driver.findElement(by).isDisplayed())
-//            Selenide.executeJavaScript("arguments[0].scrollIntoView(true);", driver.findElement(by));
 
     }
 
     public void afterFindBy(By by, WebElement element, WebDriver driver) {
-//        waitForLoadingJS(driver);
         if (log) {
             Timestamp timestamp = new Timestamp(System.currentTimeMillis());
             System.out.println(timestamp + "    found element: " + by.toString());
@@ -82,7 +72,6 @@ public class DriverEventListener extends BaseLibrary implements WebDriverEventLi
     }
 
     public void beforeClickOn(WebElement element, WebDriver driver) {
-//        waitForLoadingJS(driver);
     }
 
     public void afterClickOn(WebElement element, WebDriver driver) {
@@ -109,7 +98,6 @@ public class DriverEventListener extends BaseLibrary implements WebDriverEventLi
     }
 
     public void beforeScript(String script, WebDriver driver) {
-//        waitForLoadingJS(driver);
         if (log) {
             Timestamp timestamp = new Timestamp(System.currentTimeMillis());
             System.out.println(timestamp + "    before script: " + script);

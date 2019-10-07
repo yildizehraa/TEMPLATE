@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f539e17d-6e4f-4734-a9c5-cb59643da0d1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Expedia_Login/Expedia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Expedia_Login/Expedia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/AllureEnvironmentUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/AllureEnvironmentUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/BaseLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/BaseLibrary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/DriverEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/DriverEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/common/BaseLibrary$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/common/BaseLibrary$2.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,20 +19,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Expedia.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/tests/Expedia_Login/Expedia.java">
+      <file leaf-file-name="GroovyScriptProcess.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/StringGenerator/GroovyScriptProcess.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+            <state relative-caret-position="276">
+              <caret line="46" column="34" lean-forward="true" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseLibrary.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/common/BaseLibrary.java">
+      <file leaf-file-name="AllureEnvironmentUtils.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/common/AllureEnvironmentUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="104" column="21" lean-forward="true" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
+            <state relative-caret-position="238">
+              <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -42,6 +47,7 @@
       <find>tur</find>
       <find>Dwebdriver</find>
       <find>SolCrmFramework</find>
+      <find>hold</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -54,8 +60,11 @@
         <option value="$PROJECT_DIR$/testng_2.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/tests/StringGenerator/GroovyScriptProcess.java" />
-        <option value="$PROJECT_DIR$/src/main/java/common/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/Expedia_Login/Expedia.java" />
+        <option value="$PROJECT_DIR$/src/main/java/common/BaseLibrary.java" />
+        <option value="$PROJECT_DIR$/src/main/java/common/BaseTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/common/DriverEventListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/common/AllureEnvironmentUtils.java" />
       </list>
     </option>
   </component>
@@ -93,6 +102,27 @@
               <item name="DENEMESON_1" type="b2602c69:ProjectViewProjectNode" />
               <item name="DENEMESON_1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DENEMESON_1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DENEMESON_1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DENEMESON_1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DENEMESON_1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DENEMESON_1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DENEMESON_1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -118,16 +148,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
               <item name="Expedia_Login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DENEMESON_1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DENEMESON_1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="Expedia_Login" type="462c0819:PsiDirectoryNode" />
-              <item name="Expedia" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="DENEMESON_1" type="b2602c69:ProjectViewProjectNode" />
@@ -291,6 +311,9 @@
     <history-entry file="Expedia_TS0001_CreateAccount - 2019.10.07 at 16h 51m 29s.xml">
       <configuration name="Expedia.TS0001_CreateAccount" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="Expedia_TS0001_CreateAccount - 2019.10.07 at 17h 11m 00s.xml">
+      <configuration name="Expedia.TS0001_CreateAccount" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -304,12 +327,12 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.45964125" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29078802" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22228146" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22228146" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -326,6 +349,18 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/common/BaseLibrary.java</url>
+          <line>122</line>
+          <properties />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -346,10 +381,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="34" column="50" lean-forward="true" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
-          <folding>
-            <element signature="e#1081#1082#0" expanded="true" />
-            <element signature="e#1142#1143#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -407,35 +438,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/StringGenerator/GroovyScriptProcess.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/Expedia_Login/Expedia.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="46" column="34" lean-forward="true" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
-          <folding>
-            <element signature="e#1081#1082#0" expanded="true" />
-            <element signature="e#1142#1143#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/DriverEventListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1598">
+          <caret line="99" column="63" selection-start-line="99" selection-start-column="63" selection-end-line="99" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/common/BaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2462">
-          <caret line="203" column="33" selection-start-line="203" selection-start-column="33" selection-end-line="203" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/Expedia_Login/Expedia.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        <state relative-caret-position="629">
+          <caret line="275" column="35" selection-start-line="275" selection-start-column="35" selection-end-line="275" selection-end-column="35" />
+          <folding>
+            <element signature="method#driverPath#0;class#BaseTest#0" />
+            <element signature="method#driverSetUp#0;class#BaseTest#0" />
+            <element signature="method#beforeSuite#0;class#BaseTest#0" />
+            <element signature="method#beforeMethod#0;class#BaseTest#0" />
+            <element signature="method#afterMethod#0;class#BaseTest#0" />
+            <element signature="method#afterClass#0;class#BaseTest#0" />
+            <element signature="method#beforeClass#0;class#BaseTest#0" />
+            <element signature="method#getProperty#0;class#BaseTest#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/common/BaseLibrary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="104" column="21" lean-forward="true" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
+        <state relative-caret-position="-1741">
+          <caret line="47" column="105" selection-start-line="47" selection-start-column="105" selection-end-line="47" selection-end-column="105" />
+          <folding>
+            <element signature="e#9491#9492#0" expanded="true" />
+            <element signature="e#9528#9529#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/StringGenerator/GroovyScriptProcess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="46" column="34" lean-forward="true" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/AllureEnvironmentUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
         </state>
       </provider>
     </entry>
