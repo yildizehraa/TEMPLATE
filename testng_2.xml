@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="MayaNextTest" parallel="classes" verbose="1">
+
+
+    <parameter name="gridUrl" value="http://alamontest.ng.entp.tgc:4443/wd/hub"/>
+    <parameter name="env" value="Prp"/>
+    <parameter name="serviceId" value="284399"/>
+    <parameter name="moduleId" value="23"/>
+    <parameter name="testEnabled" value="true"/>
+
+
+    <!--<listeners>-->
+    <!--<listener class-name="listeners.SimpleAnnotationTransformer"/>-->
+    <!--</listeners>-->
+
+    <test name="Fiber">
+        <classes>
+            <!--<class name="tests.TOPTAN.Toptan"/>-->
+            <!--<class name="tests.Fiber_Bireysel.MayaNextFiberBireysel"/>-->
+            <!--<class name="tests.TV.TVTestleri"/>-->
+        </classes>
+    </test>
+
+
+</suite>
