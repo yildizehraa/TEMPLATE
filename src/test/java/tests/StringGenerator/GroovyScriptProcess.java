@@ -27,7 +27,7 @@ public class GroovyScriptProcess extends BaseLibrary {
         int cnt2 = 0;
         String packageName;
         String packages;
-        String path = "C:\\Users\\admin\\Desktop\\TestHackathon\\Yeni klasör\\src\\test\\java\\tests";
+        String path = "C:\\Users\\admin\\Desktop\\TestHackathon\\DENEMESON_1\\src\\test\\java\\tests";
         File dir = new File(path);
         ArrayList liste = new ArrayList();
         Class c;
