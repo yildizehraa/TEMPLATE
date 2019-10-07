@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import pages.*;
 
 import static com.codeborne.selenide.Selenide.back;
+import static com.codeborne.selenide.Selenide.sleep;
 
 
 @Feature("Expedia")
@@ -23,7 +24,8 @@ public class Expedia extends BaseTest {
     public void TS0001_CreateAccount(){
 
         mainPage.open();
-takeScreenshot();
+        sleep(5000);
+        takeScreenshot();
 
     }
 
